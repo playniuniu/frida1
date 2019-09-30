@@ -1,0 +1,4 @@
+var userInfo = Java.use("com.ss.android.common.applog.UserInfo");
+        userInfo.getUserInfo.overload('int', 'java.lang.String', '[Ljava.lang.String;', 'java.lang.String').implementation=function(a, b, c, d){
+            send("a:" + a + ", b:" + b + ", c:" + c + ", d:" + d)
+        };
